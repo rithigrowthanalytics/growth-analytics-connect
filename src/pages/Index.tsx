@@ -156,7 +156,7 @@ const Index = () => {
                 <ul className="space-y-2">
                   <li className="flex items-center text-gray-700">
                     <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
-                    AI Driven Software as a Service
+                    AI Software as a Service
                   </li>
                   <li className="flex items-center text-gray-700">
                     <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
