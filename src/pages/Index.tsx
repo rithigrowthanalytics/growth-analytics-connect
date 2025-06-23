@@ -149,22 +149,18 @@ const Index = () => {
                 <div className="bg-purple-100 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
                   <Brain className="h-8 w-8 text-purple-600" />
                 </div>
-                <h3 className="text-2xl font-semibold text-gray-900 mb-4">Artificial Intelligence</h3>
+                <h3 className="text-2xl font-semibold text-gray-900 mb-4">AI No Code Solutions</h3>
                 <p className="text-gray-600 mb-6">
-                  Harness the power of AI and machine learning to automate processes, predict outcomes, and drive innovation.
+                  Harness the power of AI and machine learning to cleanse and transform survey data, and identify thematic insights.
                 </p>
                 <ul className="space-y-2">
                   <li className="flex items-center text-gray-700">
                     <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
-                    Machine Learning Models
+                    AI Driven Software as a Service
                   </li>
                   <li className="flex items-center text-gray-700">
                     <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
-                    Process Automation
-                  </li>
-                  <li className="flex items-center text-gray-700">
-                    <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
-                    Predictive Analytics
+                    Data Cleansing & Transformation
                   </li>
                 </ul>
               </CardContent>
