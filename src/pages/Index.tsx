@@ -1,4 +1,3 @@
-
 import { ArrowRight, BarChart3, Brain, Building2, CheckCircle, Globe, Mail, MapPin, Phone, TrendingUp, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -72,7 +71,7 @@ const Index = () => {
                 <span className="text-blue-600"> Data-Driven Insights</span>
               </h1>
               <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-                Growth Analytics is Australia's premier consulting firm specialising in analytics, artificial intelligence, and mergers & acquisitions. We transform complex data into strategic advantage.
+                Growth Analytics is a boutique consulting firm specialising in data analytics, artificial intelligence, and mergers & acquisitions. We transform complex data into strategic advantage.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8">
@@ -433,7 +432,7 @@ const Index = () => {
                 <span className="text-xl font-bold">Growth Analytics</span>
               </div>
               <p className="text-gray-400 mb-4">
-                Australia's premier consulting firm specialising in analytics, AI, and M&A advisory services.
+                Australia's premier consulting firm specialising in data analytics, artificial intelligence, and mergers & acquisitions services.
               </p>
               <p className="text-sm text-gray-400">
                 © 2024 Growth Analytics Pty Ltd. All rights reserved.<br />
