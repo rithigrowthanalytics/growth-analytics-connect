@@ -17,22 +17,48 @@ const Index = () => {
     message: ''
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    console.log('Form submitted:', formData);
+ const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+
+  const form = e.target as HTMLFormElement;
+
+  const formDataToSend = new FormData(form);
+
+  try {
+    const response = await fetch("/", {
+      method: "POST",
+      body: formDataToSend,
+    });
+
+    if (response.ok) {
+      toast({
+        title: "Enquiry Submitted",
+        description: "Thank you for your interest. We'll get back to you within 24 hours.",
+      });
+
+      // Reset form state
+      setFormData({
+        name: '',
+        email: '',
+        company: '',
+        phone: '',
+        service: '',
+        message: ''
+      });
+    } else {
+      toast({
+        title: "Submission Failed",
+        description: "Something went wrong. Please try again later.",
+      });
+    }
+  } catch (error) {
+    console.error("Form submission error:", error);
     toast({
-      title: "Enquiry Submitted",
-      description: "Thank you for your interest. We'll get back to you within 24 hours.",
+      title: "Submission Error",
+      description: "An unexpected error occurred. Please try again later.",
     });
-    setFormData({
-      name: '',
-      email: '',
-      company: '',
-      phone: '',
-      service: '',
-      message: ''
-    });
-  };
+  }
+};
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     setFormData({
@@ -311,7 +337,19 @@ const Index = () => {
             <Card>
               <CardContent className="p-8">
                 <h3 className="text-2xl font-semibold text-gray-900 mb-6">Send us an Enquiry</h3>
-                <form onSubmit={handleSubmit} className="space-y-6">
+                <form 
+                name="enquiry"
+                method="POST"
+                data-netlify="true"
+                netlify-honeypot="bot-field"
+                onSubmit={handleSubmit}
+                className="space-y-6"
+                >
+                <input type="hidden" name="form-name" value="enquiry" />
+  
+                  <p className="hidden">
+                  <label>Don’t fill this out if you're human: <input name="bot-field" onChange={handleInputChange} /></label>
+                  </p>                  
                   <div className="grid grid-cols-2 gap-4">
                     <div>
                       <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
