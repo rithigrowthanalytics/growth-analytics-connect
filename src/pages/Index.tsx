@@ -60,6 +60,7 @@ const Index = () => {
             </div>
             <div className="hidden md:flex items-center space-x-8">
               <a href="#services" className="text-gray-700 hover:text-blue-600 transition-colors">Services</a>
+              <a href="#services" className="text-gray-700 hover:text-blue-600 transition-colors">Our Work</a>
               <a href="#about" className="text-gray-700 hover:text-blue-600 transition-colors">About</a>
               <Button className="bg-blue-600 hover:bg-blue-700"onClick={scrollToContact}>Contact</Button>
             </div>
@@ -131,7 +132,7 @@ const Index = () => {
                 </div>
                 <h3 className="text-2xl font-semibold text-gray-900 mb-4">Analytics & BI</h3>
                 <p className="text-gray-600 mb-6">
-                  Transform raw data into actionable insights with advanced analytics, business intelligence, and data visualization solutions.
+                  Transform raw data into actionable insights with advanced analytics, business intelligence, and data visualisation solutions.
                 </p>
                 <ul className="space-y-2">
                   <li className="flex items-center text-gray-700">
@@ -167,6 +168,10 @@ const Index = () => {
                   <li className="flex items-center text-gray-700">
                     <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
                     Data Cleansing & Transformation
+                  </li>
+                  <li className="flex items-center text-gray-700">
+                    <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
+                    Thematic Insights
                   </li>
                 </ul>
               </CardContent>
@@ -217,7 +222,7 @@ const Index = () => {
                 Trusted by Australian Leaders
               </h2>
               <p className="text-lg text-gray-600 mb-6">
-                With over a decade of experience in the Australian market, Growth Analytics has helped hundreds of organizations transform their operations through intelligent use of data and technology.
+                With over a decade of experience in the Australian market and overseas, Growth Analytics has helped multiple organisations transform their operations and grow their business through intelligent use of data and technology.
               </p>
               <div className="grid grid-cols-2 gap-6 mb-8">
                 <div className="text-center">
