@@ -394,7 +394,7 @@ const Index = () => {
                       <option value="analytics">Analytics & Business Intelligence</option>
                       <option value="ai">Artificial Intelligence & ML</option>
                       <option value="ma">Mergers & Acquisitions</option>
-                      <option value="other">Other/Not Sure</option>
+                      <option value="other">Other</option>
                     </select>
                   </div>
 
