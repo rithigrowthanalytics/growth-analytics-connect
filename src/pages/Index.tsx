@@ -61,7 +61,8 @@ const Index = () => {
             <div className="hidden md:flex items-center space-x-8">
               <a href="#services" className="text-gray-700 hover:text-blue-600 transition-colors">Services</a>
               <a href="#about" className="text-gray-700 hover:text-blue-600 transition-colors">About</a>
-              <Button className="bg-blue-600 hover:bg-blue-700">Contact Us</Button>
+              <a href="#contact" className="text-gray-700 hover:text-blue-600 transition-colors">Contact</a>
+              <Button className="bg-blue-600 hover:bg-blue-700">Get Started</Button>
             </div>
           </div>
         </div>
@@ -81,7 +82,7 @@ const Index = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8" onClick={scrollToContact}>
-                  Contact Us
+                  Start Your Journey
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
                 <Button size="lg" variant="outline" className="border-blue-600 text-blue-600 hover:bg-blue-50">
@@ -258,27 +259,34 @@ const Index = () => {
             </p>
           </div>
 
-            <div className="grid lg:grid-cols-2 gap-12">
-              {/* Contact Information */}
-              <div>
-                <h3 className="text-2xl font-semibold text-gray-900 mb-6">Get in Touch</h3>
-                  <div className="flex items-start space-x-4">
-                    <Phone className="h-6 w-6 text-blue-600 mt-1" />
-                    <div>
-                      <h4 className="font-semibold text-gray-900">Phone</h4>
-                      <p className="text-gray-600">+61 400 939 129</p>
-                    </div>
+          <div className="grid lg:grid-cols-2 gap-12">
+            {/* Contact Information */}
+            <div>
+              <h3 className="text-2xl font-semibold text-gray-900 mb-6">Get in Touch</h3>
+              <div className="space-y-6">
+                <div className="flex items-start space-x-4">
+                  <MapPin className="h-6 w-6 text-blue-600 mt-1" />
+                  <div>
+                    <h4 className="font-semibold text-gray-900">Sydney Office</h4>
+                    <p className="text-gray-600">Level 42, Governor Phillip Tower<br />1 Farrer Place, Sydney NSW 2000</p>
                   </div>
-                  <div className="flex items-start space-x-4">
-                    <Mail className="h-6 w-6 text-blue-600 mt-1" />
-                    <div>
-                      <h4 className="font-semibold text-gray-900">Email</h4>
-                      <p className="text-gray-600">info@growthanalytics.com.au</p>
-                    </div>
+                </div>
+                <div className="flex items-start space-x-4">
+                  <Phone className="h-6 w-6 text-blue-600 mt-1" />
+                  <div>
+                    <h4 className="font-semibold text-gray-900">Phone</h4>
+                    <p className="text-gray-600">+61 2 8000 7000</p>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-4">
+                  <Mail className="h-6 w-6 text-blue-600 mt-1" />
+                  <div>
+                    <h4 className="font-semibold text-gray-900">Email</h4>
+                    <p className="text-gray-600">hello@growthanalytics.com.au</p>
                   </div>
                 </div>
               </div>
-            
+
               <div className="mt-8 p-6 bg-blue-50 rounded-lg">
                 <h4 className="font-semibold text-gray-900 mb-2">Why Choose Growth Analytics?</h4>
                 <ul className="space-y-2 text-gray-700">
@@ -386,7 +394,7 @@ const Index = () => {
                       <option value="analytics">Analytics & Business Intelligence</option>
                       <option value="ai">Artificial Intelligence & ML</option>
                       <option value="ma">Mergers & Acquisitions</option>
-                      <option value="other">Other</option>
+                      <option value="other">Other/Not Sure</option>
                     </select>
                   </div>
 
