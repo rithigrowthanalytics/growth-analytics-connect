@@ -61,7 +61,7 @@ const Index = () => {
             <div className="hidden md:flex items-center space-x-8">
               <a href="#services" className="text-gray-700 hover:text-blue-600 transition-colors">Services</a>
               <a href="#about" className="text-gray-700 hover:text-blue-600 transition-colors">About</a>
-              <Button className="bg-blue-600 hover:bg-blue-700">Contact Us</Button>
+              <Button className="bg-blue-600 hover:bg-blue-700"onClick={scrollToContact}>Contact</Button>
             </div>
           </div>
         </div>
@@ -81,7 +81,7 @@ const Index = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8" onClick={scrollToContact}>
-                  Contact Us
+                  Contact
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
                 <Button size="lg" variant="outline" className="border-blue-600 text-blue-600 hover:bg-blue-50">
@@ -357,7 +357,7 @@ const Index = () => {
                     </div>
                     <div>
                       <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">
-                        Phone Number
+                        Phone Number *
                       </label>
                       <Input
                         type="tel"
@@ -384,7 +384,7 @@ const Index = () => {
                     >
                       <option value="">Select a service</option>
                       <option value="analytics">Analytics & Business Intelligence</option>
-                      <option value="ai">Artificial Intelligence & ML</option>
+                      <option value="ai">No Code AI</option>
                       <option value="ma">Mergers & Acquisitions</option>
                       <option value="other">Other/Not Sure</option>
                     </select>
@@ -402,7 +402,7 @@ const Index = () => {
                       required
                       rows={4}
                       className="w-full"
-                      placeholder="Tell us about your project requirements and how we can help..."
+                      placeholder="Tell us about your requirements and how we can help..."
                     />
                   </div>
 
@@ -427,11 +427,11 @@ const Index = () => {
                 <span className="text-xl font-bold">Growth Analytics</span>
               </div>
               <p className="text-gray-400 mb-4">
-                Australia's premier consulting firm specialising in data analytics, artificial intelligence, and mergers & acquisitions services.
+                Boutique consulting firm specialising in data analytics, artificial intelligence, and mergers & acquisitions services.
               </p>
               <p className="text-sm text-gray-400">
-                © 2024 Growth Analytics Pty Ltd. All rights reserved.<br />
-                ABN: 12 345 678 901
+                © 2025 Growth Analytics Pty Ltd. All rights reserved.<br />
+                ABN: 15 637 610 363
               </p>
             </div>
             <div>
@@ -448,7 +448,6 @@ const Index = () => {
               <ul className="space-y-2 text-gray-400">
                 <li><a href="#" className="hover:text-white transition-colors">About Us</a></li>
                 <li><a href="#" className="hover:text-white transition-colors">Case Studies</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Careers</a></li>
                 <li><a href="#" className="hover:text-white transition-colors">Contact</a></li>
               </ul>
             </div>
