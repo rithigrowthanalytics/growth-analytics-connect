@@ -17,63 +17,6 @@ const Index = () => {
     message: ''
   });
 
- const handleSubmit = async (e: React.FormEvent) => {
-  e.preventDefault();
-
-  const form = e.target as HTMLFormElement;
-
-  const formDataToSend = new FormData(form);
-
-  try {
-    const response = await fetch("/", {
-      method: "POST",
-      body: formDataToSend,
-    });
-
-    if (response.ok) {
-      toast({
-        title: "Enquiry Submitted",
-        description: "Thank you for your interest. We'll get back to you within 24 hours.",
-      });
-
-      // Reset form state
-      setFormData({
-        name: '',
-        email: '',
-        company: '',
-        phone: '',
-        service: '',
-        message: ''
-      });
-    } else {
-      toast({
-        title: "Submission Failed",
-        description: "Something went wrong. Please try again later.",
-      });
-    }
-  } catch (error) {
-    console.error("Form submission error:", error);
-    toast({
-      title: "Submission Error",
-      description: "An unexpected error occurred. Please try again later.",
-    });
-  }
-};
-
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
-  };
-
-  const scrollToContact = () => {
-    const contactSection = document.getElementById('contact');
-    if (contactSection) {
-      contactSection.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
   return (
     <div className="min-h-screen bg-white">
       {/* Navigation */}
