@@ -41,6 +41,13 @@ const Index = () => {
     });
   };
 
+  const scrollToContact = () => {
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <div className="min-h-screen bg-white">
       {/* Navigation */}
@@ -74,7 +81,7 @@ const Index = () => {
                 Growth Analytics is a boutique consulting firm specialising in data analytics, artificial intelligence, and mergers & acquisitions. We transform complex data into strategic advantage.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8">
+                <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8" onClick={scrollToContact}>
                   Start Your Journey
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
