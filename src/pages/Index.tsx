@@ -17,6 +17,37 @@ const Index = () => {
     message: ''
   });
 
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    console.log('Form submitted:', formData);
+    toast({
+      title: "Enquiry Submitted",
+      description: "Thank you for your interest. We'll get back to you within 24 hours.",
+    });
+    setFormData({
+      name: '',
+      email: '',
+      company: '',
+      phone: '',
+      service: '',
+      message: ''
+    });
+  };
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value
+    });
+  };
+
+  const scrollToContact = () => {
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <div className="min-h-screen bg-white">
       {/* Navigation */}
@@ -280,113 +311,111 @@ const Index = () => {
             <Card>
               <CardContent className="p-8">
                 <h3 className="text-2xl font-semibold text-gray-900 mb-6">Send us an Enquiry</h3>
-                <form 
-  name="enquiry"
-  method="POST"
-  data-netlify="true"
-  netlify-honeypot="bot-field"
-  className="space-y-6"
->
-  <input type="hidden" name="form-name" value="enquiry" />
-  
-  {/* Honeypot field for bots */}
-  <p className="hidden">
-    <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
-  </p>
+                <form onSubmit={handleSubmit} className="space-y-6">
+                  <div className="grid grid-cols-2 gap-4">
+                    <div>
+                      <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
+                        Full Name *
+                      </label>
+                      <Input
+                        type="text"
+                        id="name"
+                        name="name"
+                        value={formData.name}
+                        onChange={handleInputChange}
+                        required
+                        className="w-full"
+                        placeholder="John Smith"
+                      />
+                    </div>
+                    <div>
+                      <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
+                        Email Address *
+                      </label>
+                      <Input
+                        type="email"
+                        id="email"
+                        name="email"
+                        value={formData.email}
+                        onChange={handleInputChange}
+                        required
+                        className="w-full"
+                        placeholder="john@company.com"
+                      />
+                    </div>
+                  </div>
 
-  <div className="grid grid-cols-2 gap-4">
-    <div>
-      <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
-        Full Name *
-      </label>
-      <Input
-        type="text"
-        id="name"
-        name="name"
-        required
-        className="w-full"
-        placeholder="John Smith"
-      />
-    </div>
-    <div>
-      <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
-        Email Address *
-      </label>
-      <Input
-        type="email"
-        id="email"
-        name="email"
-        required
-        className="w-full"
-        placeholder="john@company.com"
-      />
-    </div>
-  </div>
+                  <div className="grid grid-cols-2 gap-4">
+                    <div>
+                      <label htmlFor="company" className="block text-sm font-medium text-gray-700 mb-2">
+                        Company Name
+                      </label>
+                      <Input
+                        type="text"
+                        id="company"
+                        name="company"
+                        value={formData.company}
+                        onChange={handleInputChange}
+                        className="w-full"
+                        placeholder="ABC Corporation"
+                      />
+                    </div>
+                    <div>
+                      <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">
+                        Phone Number *
+                      </label>
+                      <Input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        value={formData.phone}
+                        onChange={handleInputChange}
+                        className="w-full"
+                        placeholder="+61 400 000 000"
+                      />
+                    </div>
+                  </div>
 
-  <div className="grid grid-cols-2 gap-4">
-    <div>
-      <label htmlFor="company" className="block text-sm font-medium text-gray-700 mb-2">
-        Company Name
-      </label>
-      <Input
-        type="text"
-        id="company"
-        name="company"
-        className="w-full"
-        placeholder="ABC Corporation"
-      />
-    </div>
-    <div>
-      <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">
-        Phone Number *
-      </label>
-      <Input
-        type="tel"
-        id="phone"
-        name="phone"
-        required
-        className="w-full"
-        placeholder="+61 400 000 000"
-      />
-    </div>
-  </div>
+                  <div>
+                    <label htmlFor="service" className="block text-sm font-medium text-gray-700 mb-2">
+                      Service of Interest
+                    </label>
+                    <select
+                      id="service"
+                      name="service"
+                      value={formData.service}
+                      onChange={handleInputChange}
+                      className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    >
+                      <option value="">Select a service</option>
+                      <option value="analytics">Analytics & Business Intelligence</option>
+                      <option value="ai">No Code AI</option>
+                      <option value="ma">Mergers & Acquisitions</option>
+                      <option value="other">Other/Not Sure</option>
+                    </select>
+                  </div>
 
-  <div>
-    <label htmlFor="service" className="block text-sm font-medium text-gray-700 mb-2">
-      Service of Interest
-    </label>
-    <select
-      id="service"
-      name="service"
-      className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-    >
-      <option value="">Select a service</option>
-      <option value="analytics">Analytics & Business Intelligence</option>
-      <option value="ai">No Code AI</option>
-      <option value="ma">Mergers & Acquisitions</option>
-      <option value="other">Other/Not Sure</option>
-    </select>
-  </div>
+                  <div>
+                    <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
+                      Message *
+                    </label>
+                    <Textarea
+                      id="message"
+                      name="message"
+                      value={formData.message}
+                      onChange={handleInputChange}
+                      required
+                      rows={4}
+                      className="w-full"
+                      placeholder="Tell us about your requirements and how we can help..."
+                    />
+                  </div>
 
-  <div>
-    <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
-      Message *
-    </label>
-    <Textarea
-      id="message"
-      name="message"
-      required
-      rows={4}
-      className="w-full"
-      placeholder="Tell us about your requirements and how we can help..."
-    />
-  </div>
-
-  <Button type="submit" className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3">
-    Send Enquiry
-    <ArrowRight className="ml-2 h-5 w-5" />
-  </Button>
-</form>
+                  <Button type="submit" className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3">
+                    Send Enquiry
+                    <ArrowRight className="ml-2 h-5 w-5" />
+                  </Button>
+                </form>
               </CardContent>
             </Card>
           </div>
