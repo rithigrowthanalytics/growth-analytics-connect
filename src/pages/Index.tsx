@@ -61,8 +61,7 @@ const Index = () => {
             <div className="hidden md:flex items-center space-x-8">
               <a href="#services" className="text-gray-700 hover:text-blue-600 transition-colors">Services</a>
               <a href="#about" className="text-gray-700 hover:text-blue-600 transition-colors">About</a>
-              <a href="#contact" className="text-gray-700 hover:text-blue-600 transition-colors">Contact</a>
-              <Button className="bg-blue-600 hover:bg-blue-700">Get Started</Button>
+              <Button className="bg-blue-600 hover:bg-blue-700">Contact Us</Button>
             </div>
           </div>
         </div>
@@ -82,7 +81,7 @@ const Index = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8" onClick={scrollToContact}>
-                  Start Your Journey
+                  Contact Us
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
                 <Button size="lg" variant="outline" className="border-blue-600 text-blue-600 hover:bg-blue-50">
@@ -156,7 +155,7 @@ const Index = () => {
                 <div className="bg-purple-100 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
                   <Brain className="h-8 w-8 text-purple-600" />
                 </div>
-                <h3 className="text-2xl font-semibold text-gray-900 mb-4">AI No Code Solutions</h3>
+                <h3 className="text-2xl font-semibold text-gray-900 mb-4">No Code AI Solutions</h3>
                 <p className="text-gray-600 mb-6">
                   Harness the power of AI and machine learning to cleanse and transform survey data, and identify thematic insights.
                 </p>
