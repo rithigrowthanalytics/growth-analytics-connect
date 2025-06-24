@@ -263,26 +263,18 @@ const Index = () => {
             {/* Contact Information */}
             <div>
               <h3 className="text-2xl font-semibold text-gray-900 mb-6">Get in Touch</h3>
-              <div className="space-y-6">
-                <div className="flex items-start space-x-4">
-                  <MapPin className="h-6 w-6 text-blue-600 mt-1" />
-                  <div>
-                    <h4 className="font-semibold text-gray-900">Sydney Office</h4>
-                    <p className="text-gray-600">Level 42, Governor Phillip Tower<br />1 Farrer Place, Sydney NSW 2000</p>
-                  </div>
-                </div>
                 <div className="flex items-start space-x-4">
                   <Phone className="h-6 w-6 text-blue-600 mt-1" />
                   <div>
                     <h4 className="font-semibold text-gray-900">Phone</h4>
-                    <p className="text-gray-600">+61 2 8000 7000</p>
+                    <p className="text-gray-600">+61 400 939 129</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-4">
                   <Mail className="h-6 w-6 text-blue-600 mt-1" />
                   <div>
                     <h4 className="font-semibold text-gray-900">Email</h4>
-                    <p className="text-gray-600">hello@growthanalytics.com.au</p>
+                    <p className="text-gray-600">info@growthanalytics.com.au</p>
                   </div>
                 </div>
               </div>
