@@ -27,9 +27,9 @@ const OurWork = () => {
       challenge: "Customers struggle to make an informed building decision due to inconsistent quotes and hidden costs.",
       solution: "AI delivered easy-to-understand quote comparison report highlighting hidden costs empowering customers to make informed decisions.",
       results: [
-        "35% increase in exit valuation for seller",
-        "40% reduction in due diligence timeline",
-        "Successful acquisition completed"
+        "~$30k average savings per customer",
+        "50% reduction in time to compare quotes",
+        "From build to go-to-market in < 3 months"
       ],
       technologies: ["Excel", "Data Room", "Financial Modeling"],
       icon: TrendingUp
