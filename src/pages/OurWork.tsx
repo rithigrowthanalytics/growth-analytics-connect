@@ -21,6 +21,20 @@ const OurWork = () => {
       icon: Building2
     },
     {
+      title: "No Code AI Complex Data Compare",
+      client: "Customers Comparing Building Quotes",
+      industry: "Construction",
+      challenge: "Customers struggle to make an informed building decision due to inconsistent quotes and hidden costs.",
+      solution: "AI delivered easy-to-understand quote comparison report highlighting hidden costs empowering customers to make informed decisions.",
+      results: [
+        "35% increase in exit valuation for seller",
+        "40% reduction in due diligence timeline",
+        "Successful acquisition completed"
+      ],
+      technologies: ["Excel", "Data Room", "Financial Modeling"],
+      icon: TrendingUp
+    },
+    {
       title: "M&A Advisory & Due Diligence Success",
       client: "Global Online Education Business",
       industry: "Online Education",
@@ -28,24 +42,10 @@ const OurWork = () => {
       solution: "Comprehensive due diligence analytics including financial modeling and risk assessment.",
       results: [
         "35% increase in exit valuation for seller",
-        "Reduced due diligence timeline by 40%",
+        "40% reduction in due diligence timeline",
         "Successful acquisition completed"
       ],
-      technologies: ["Tableau", "Python", "AWS"],
-      icon: TrendingUp
-    },
-    {
-      title: "M&A Due Diligence Success",
-      client: "Private Equity Firm",
-      industry: "Financial Services",
-      challenge: "Complex acquisition requiring rapid financial and operational analysis of target company.",
-      solution: "Comprehensive due diligence analytics including financial modeling and risk assessment.",
-      results: [
-        "Identified $5M in cost synergies",
-        "Reduced due diligence timeline by 40%",
-        "Successful acquisition completed"
-      ],
-      technologies: ["Excel", "R", "Financial Modeling"],
+      technologies: ["Excel", "Data Room", "Financial Modeling"],
       icon: Users
     }
   ];
