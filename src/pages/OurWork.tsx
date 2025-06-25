@@ -64,36 +64,7 @@ const OurWork = () => {
     }
   ];
 
-  const testimonials = [
-    {
-      name: "Sarah Chen",
-      position: "Chief Technology Officer",
-      company: "RetailCorp Australia",
-      content: "Growth Analytics transformed our approach to data. Their team didn't just deliver analytics - they provided strategic insights that directly impacted our bottom line. The 47% increase in customer retention speaks for itself.",
-      rating: 5
-    },
-    {
-      name: "Michael Thompson",
-      position: "CEO",
-      company: "HealthNet Regional",
-      content: "The analytics platform Growth Analytics built for us has been game-changing. We now have real-time visibility into our operations and can make data-driven decisions that improve patient outcomes.",
-      rating: 5
-    },
-    {
-      name: "Jennifer Walsh",
-      position: "Partner",
-      company: "Capital Growth Partners",
-      content: "Their M&A advisory services are exceptional. The team's ability to quickly analyze complex financial data and identify key insights was crucial to our successful acquisition. Highly recommended.",
-      rating: 5
-    },
-    {
-      name: "David Kim",
-      position: "Operations Director",
-      company: "Manufacturing Solutions Ltd",
-      content: "Working with Growth Analytics was seamless. They understood our business needs immediately and delivered solutions that exceeded our expectations. The ROI was evident within the first quarter.",
-      rating: 5
-    }
-  ];
+  
 
   return (
     <div className="min-h-screen bg-white">
@@ -214,45 +185,7 @@ const OurWork = () => {
         </div>
       </section>
 
-      {/* Testimonials Section */}
-      <section className="py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-              What Our Clients Say
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Don't just take our word for it. Here's what business leaders across Australia say about working with Growth Analytics.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-8">
-            {testimonials.map((testimonial, index) => (
-              <Card key={index} className="relative">
-                <CardContent className="p-8">
-                  <div className="absolute top-4 right-4">
-                    <Quote className="h-8 w-8 text-blue-200" />
-                  </div>
-                  
-                  <div className="flex mb-4">
-                    {[...Array(testimonial.rating)].map((_, i) => (
-                      <Star key={i} className="h-5 w-5 text-yellow-400 fill-current" />
-                    ))}
-                  </div>
-                  
-                  <p className="text-gray-700 mb-6 italic">"{testimonial.content}"</p>
-                  
-                  <div className="border-t pt-4">
-                    <h4 className="font-semibold text-gray-900">{testimonial.name}</h4>
-                    <p className="text-sm text-gray-600">{testimonial.position}</p>
-                    <p className="text-sm text-blue-600 font-medium">{testimonial.company}</p>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
+    
 
       {/* CTA Section */}
       <section className="py-20 bg-blue-600">
