@@ -242,14 +242,14 @@ const Index = () => {
             </div>
             <div>
               <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
-                Trusted by Australian Leaders
+                Adding Value to Global Organisations since 2019
               </h2>
               <p className="text-lg text-gray-600 mb-6">
-                With over a decade of experience in the Australian market and overseas, Growth Analytics has helped multiple organisations transform their operations and grow their business through intelligent use of data and technology.
+                With almost a decade of experience in the Australian market and overseas, Growth Analytics has helped multiple organisations transform their operations and grow their business through intelligent use of data and technology.
               </p>
               <div className="grid grid-cols-2 gap-6 mb-8">
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-blue-600 mb-2">200+</div>
+                  <div className="text-3xl font-bold text-blue-600 mb-2">30+</div>
                   <div className="text-gray-600">Projects Delivered</div>
                 </div>
                 <div className="text-center">
@@ -257,17 +257,17 @@ const Index = () => {
                   <div className="text-gray-600">Value Created</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-blue-600 mb-2">95%</div>
+                  <div className="text-3xl font-bold text-blue-600 mb-2">100%</div>
                   <div className="text-gray-600">Client Satisfaction</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-blue-600 mb-2">15+</div>
+                  <div className="text-3xl font-bold text-blue-600 mb-2">5+</div>
                   <div className="text-gray-600">Industry Verticals</div>
                 </div>
               </div>
               <div className="flex items-center space-x-4">
                 <Globe className="h-5 w-5 text-blue-600" />
-                <span className="text-gray-700">Serving clients across Australia and the Asia-Pacific region</span>
+                <span className="text-gray-700">Serving clients across Australia and the world</span>
               </div>
             </div>
           </div>
@@ -282,7 +282,7 @@ const Index = () => {
               Let's Discuss Your Growth
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Ready to unlock your organization's potential? Get in touch with our experts for a confidential consultation.
+              Ready to unlock your organisation's potential? Get in touch with our experts for a confidential consultation.
             </p>
           </div>
 
@@ -302,7 +302,7 @@ const Index = () => {
                   <Mail className="h-6 w-6 text-blue-600 mt-1" />
                   <div>
                     <h4 className="font-semibold text-gray-900">Email</h4>
-                    <p className="text-gray-600">info@growthanalytics.com.au</p>
+                    <p className="text-gray-600">sid@growthanalytics.com.au</p>
                   </div>
                 </div>
               </div>
