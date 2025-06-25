@@ -226,7 +226,6 @@ const OurWork = () => {
               <h4 className="text-lg font-semibold mb-4">Services</h4>
               <ul className="space-y-2 text-gray-400">
                 <li><a href="/#services" className="hover:text-white transition-colors">Data Analytics</a></li>
-                <li><a href="/#services" className="hover:text-white transition-colors">Business Intelligence</a></li>
                 <li><a href="/#services" className="hover:text-white transition-colors">Artificial Intelligence</a></li>
                 <li><a href="/#services" className="hover:text-white transition-colors">M&A Advisory</a></li>
               </ul>
