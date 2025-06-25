@@ -7,13 +7,13 @@ import { Link } from "react-router-dom";
 const OurWork = () => {
   const caseStudies = [
     {
-      title: "Data Strategy & Execution",
+      title: "Data Analytics & Strategy",
       client: "Major Australian University",
       industry: "Education",
       challenge: "Lack of insights on profitability and conversion.",
       solution: "Analysed and implemented comprehensive data strategy increasing profitability and funnel conversion.",
       results: [
-        "2x uplift in coversion",
+        "2x uplift in conversion",
         "20% improvement in profitability",
         "Enabled ongoing live performance view"
       ],
@@ -21,15 +21,15 @@ const OurWork = () => {
       icon: Building2
     },
     {
-      title: "Healthcare Analytics Platform",
-      client: "Regional Health Network",
-      industry: "Healthcare",
-      challenge: "Patient data scattered across multiple systems, limited visibility into operational efficiency.",
-      solution: "Built integrated analytics platform with real-time dashboards and predictive analytics.",
+      title: "M&A Advisory & Due Diligence Success",
+      client: "Global Online Education Business",
+      industry: "Online Education",
+      challenge: "Complex acquisition requiring rapid financial and operational analysis of target being sold.",
+      solution: "Comprehensive due diligence analytics including financial modeling and risk assessment.",
       results: [
-        "25% reduction in patient wait times",
-        "18% improvement in resource utilization",
-        "Enhanced patient satisfaction scores"
+        "35% increase in exit valuation for seller",
+        "Reduced due diligence timeline by 40%",
+        "Successful acquisition completed"
       ],
       technologies: ["Tableau", "Python", "AWS"],
       icon: TrendingUp
