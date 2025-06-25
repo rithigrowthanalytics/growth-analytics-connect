@@ -92,11 +92,13 @@ const OurWork = () => {
               <span className="text-xl font-bold text-gray-900">Growth Analytics</span>
             </Link>
             <div className="hidden md:flex items-center space-x-8">
-              <a href="/#services" className="text-gray-700 hover:text-blue-600 transition-colors">Services</a>
+              <Link to="/" className="text-gray-700 hover:text-blue-600 transition-colors">
+                Home
+              </Link>
               <Link to="/our-work" className="text-blue-600 font-medium">Our Work</Link>
-              <a href="/#about" className="text-gray-700 hover:text-blue-600 transition-colors">About</a>
+              <Link to="/about" className="text-gray-700 hover:text-blue-600 transition-colors">About</Link>
               <Button className="bg-blue-600 hover:bg-blue-700" asChild>
-                <a href="/#contact">Contact</a>
+                <Link to="/#contact">Contact</Link>
               </Button>
             </div>
           </div>
