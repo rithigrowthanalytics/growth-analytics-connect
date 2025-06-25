@@ -7,22 +7,22 @@ import { Link } from "react-router-dom";
 const About = () => {
   const founders = [
     {
-      name: "John Smith",
-      position: "Co-Founder & CEO",
-      bio: "John brings over 15 years of experience in data analytics and business intelligence. He has led digital transformation initiatives for Fortune 500 companies and has a proven track record of delivering measurable business results through data-driven strategies.",
-      expertise: ["Data Strategy", "Business Intelligence", "Digital Transformation"],
+      name: "Sid Galada",
+      position: "Founder & CEO",
+      bio: "Sid brings over 20 years of experience working across analytics, growth and M&A functions. He works as a CRO and has built an amazing team within growth analytics to support customers with their build and buy decisions. Sid has spent a fair amount of time exploring the world of AI and has helped take three AI applications to market to date.",
+      expertise: ["Data Strategy", "Business Intelligence", "Artificial Intelligence"],
       image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face",
-      linkedin: "#",
-      email: "john@growthanalytics.com.au"
+      linkedin: "https://www.linkedin.com/in/sidgalada/",
+      email: "sid@growthanalytics.com.au"
     },
     {
-      name: "Sarah Johnson",
-      position: "Co-Founder & CTO",
-      bio: "Sarah is a technology leader with deep expertise in artificial intelligence and machine learning. She has spent over 12 years developing innovative AI solutions for healthcare, finance, and retail sectors, helping organizations unlock the power of their data.",
-      expertise: ["Artificial Intelligence", "Machine Learning", "Technical Architecture"],
+      name: "Rithi Mathew",
+      position: "Managing Director",
+      bio: "Rithi is a technology and product leader with 15+ years leading digital product, AI, and transformation in fintech, government, and healthcare. Rithi helps organisations turn data and strategy into high-impact, real-world outcomes solving customer problems.",
+      expertise: ["Artificial Intelligence", "Digital Transformation", "Product Management"],
       image: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=400&h=400&fit=crop&crop=face",
-      linkedin: "#",
-      email: "sarah@growthanalytics.com.au"
+      linkedin: "https://www.linkedin.com/in/rithi-mathew-4506b93/",
+      email: "rithi@growthanalytics.com.au"
     }
   ];
 
@@ -211,7 +211,7 @@ const About = () => {
           <p className="text-xl text-blue-100 max-w-3xl mx-auto mb-8">
             Let's discuss how Growth Analytics can help transform your business through data-driven insights.
           </p>
-          <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-blue-600" asChild>
+          <Button size="lg" variant="outline" className="border-white text-text-blue-600 hover:bg-white hover:text-blue-600" asChild>
             <Link to="/#contact">
               Get In Touch
             </Link>
@@ -240,7 +240,6 @@ const About = () => {
               <h4 className="text-lg font-semibold mb-4">Services</h4>
               <ul className="space-y-2 text-gray-400">
                 <li><Link to="/#services" className="hover:text-white transition-colors">Data Analytics</Link></li>
-                <li><Link to="/#services" className="hover:text-white transition-colors">Business Intelligence</Link></li>
                 <li><Link to="/#services" className="hover:text-white transition-colors">Artificial Intelligence</Link></li>
                 <li><Link to="/#services" className="hover:text-white transition-colors">M&A Advisory</Link></li>
               </ul>
