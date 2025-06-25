@@ -189,11 +189,11 @@ const Index = () => {
                   </li>
                   <li className="flex items-center text-gray-700">
                     <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
-                    Data Cleansing & Transformation
+                    Cleanse & Transform Data
                   </li>
                   <li className="flex items-center text-gray-700">
                     <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
-                    Thematic Insights
+                    Deep Thematic Insights
                   </li>
                 </ul>
               </CardContent>
