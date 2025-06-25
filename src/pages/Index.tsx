@@ -181,7 +181,7 @@ const Index = () => {
                 </div>
                 <h3 className="text-2xl font-semibold text-gray-900 mb-4">No Code AI Solutions</h3>
                 <p className="text-gray-600 mb-6">
-                  Harness the power of AI and machine learning to cleanse and transform survey data, and identify thematic insights.
+                  Harness the power of AI and machine learning to cleanse and transform data, and identify thematic insights.
                 </p>
                 <ul className="space-y-2">
                   <li className="flex items-center text-gray-700">
