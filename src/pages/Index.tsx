@@ -5,6 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
+import { Link } from "react-router-dom";
 
 const Index = () => {
   const { toast } = useToast();
@@ -82,7 +83,7 @@ const Index = () => {
             </div>
             <div className="hidden md:flex items-center space-x-8">
               <a href="#services" className="text-gray-700 hover:text-blue-600 transition-colors">Services</a>
-              <a href="#services" className="text-gray-700 hover:text-blue-600 transition-colors">Our Work</a>
+              <Link to="/our-work" className="text-gray-700 hover:text-blue-600 transition-colors">Our Work</Link>
               <a href="#about" className="text-gray-700 hover:text-blue-600 transition-colors">About</a>
               <Button className="bg-blue-600 hover:bg-blue-700"onClick={scrollToContact}>Contact</Button>
             </div>
@@ -107,8 +108,8 @@ const Index = () => {
                   Contact
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
-                <Button size="lg" variant="outline" className="border-blue-600 text-blue-600 hover:bg-blue-50">
-                  View Our Work
+                <Button size="lg" variant="outline" className="border-blue-600 text-blue-600 hover:bg-blue-50" asChild>
+                  <Link to="/our-work">View Our Work</Link>
                 </Button>
               </div>
             </div>
