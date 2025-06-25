@@ -7,17 +7,17 @@ import { Link } from "react-router-dom";
 const OurWork = () => {
   const caseStudies = [
     {
-      title: "Retail Chain Digital Transformation",
-      client: "Major Australian Retailer",
-      industry: "Retail",
-      challenge: "Legacy systems and disconnected data sources were hindering growth and customer insights.",
-      solution: "Implemented comprehensive BI dashboard and AI-powered customer segmentation system.",
+      title: "Data Strategy & Execution",
+      client: "Major Australian University",
+      industry: "Education",
+      challenge: "Lack of insights on profitability and conversion.",
+      solution: "Analysed and implemented comprehensive data strategy increasing profitability and funnel conversion.",
       results: [
-        "47% increase in customer retention",
-        "32% improvement in inventory turnover",
-        "$2.8M additional revenue in first year"
+        "2x uplift in coversion",
+        "20% improvement in profitability",
+        "Enabled ongoing live performance view"
       ],
-      technologies: ["Power BI", "Azure ML", "SQL Server"],
+      technologies: ["Power BI", "Python", "SQL Server"],
       icon: Building2
     },
     {
