@@ -17,21 +17,43 @@ const Index = () => {
     message: ''
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
-    toast({
-      title: "Enquiry Submitted",
-      description: "Thank you for your interest. We'll get back to you within 24 hours.",
-    });
-    setFormData({
-      name: '',
-      email: '',
-      company: '',
-      phone: '',
-      service: '',
-      message: ''
-    });
+    
+    try {
+      const response = await fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams({
+          'form-name': 'contact',
+          ...formData
+        }).toString()
+      });
+
+      if (response.ok) {
+        toast({
+          title: "Enquiry Submitted",
+          description: "Thank you for your interest. We'll get back to you within 24 hours.",
+        });
+        setFormData({
+          name: '',
+          email: '',
+          company: '',
+          phone: '',
+          service: '',
+          message: ''
+        });
+      } else {
+        throw new Error('Form submission failed');
+      }
+    } catch (error) {
+      console.error('Form submission error:', error);
+      toast({
+        title: "Submission Failed",
+        description: "There was an error submitting your enquiry. Please try again.",
+        variant: "destructive"
+      });
+    }
   };
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -311,7 +333,24 @@ const Index = () => {
             <Card>
               <CardContent className="p-8">
                 <h3 className="text-2xl font-semibold text-gray-900 mb-6">Send us an Enquiry</h3>
-                <form onSubmit={handleSubmit} className="space-y-6">
+                <form 
+                  onSubmit={handleSubmit} 
+                  className="space-y-6"
+                  name="contact"
+                  method="POST"
+                  data-netlify="true"
+                  netlify-honeypot="bot-field"
+                >
+                  {/* Hidden input for Netlify */}
+                  <input type="hidden" name="form-name" value="contact" />
+                  
+                  {/* Honeypot field for spam protection */}
+                  <div style={{ display: 'none' }}>
+                    <label>
+                      Don't fill this out if you're human: <input name="bot-field" />
+                    </label>
+                  </div>
+
                   <div className="grid grid-cols-2 gap-4">
                     <div>
                       <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
