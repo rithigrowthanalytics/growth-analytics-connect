@@ -31,7 +31,21 @@ const OurWork = () => {
         "50% reduction in time to compare quotes",
         "From build to go-to-market in < 3 months"
       ],
-      technologies: ["Excel", "Data Room", "Financial Modeling"],
+      technologies: ["LLM", "TBC"],
+      icon: TrendingUp
+    },
+     {
+      title: "No Code AI Thematic Insights",
+      client: "Researchers Analysing Survey Data",
+      industry: "Government",
+      challenge: "Users swivel chair across multiple systems to cleanse and transform qualititative data and draw meaningful, deep thematic insights.",
+      solution: "AI delivered easy-to-use to use tool empowering users to easily cleanse and transform data providing deep, thematic insights to support better decision making.",
+      results: [
+        "TBC ~$30k average savings per customer",
+        "TBC 50% reduction in time to compare quotes",
+        "TBC From build to go-to-market in < 3 months"
+      ],
+      technologies: ["Azure", "GPT"],
       icon: TrendingUp
     },
     {
