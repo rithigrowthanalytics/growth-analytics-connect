@@ -41,11 +41,11 @@ const OurWork = () => {
       challenge: "Users swivel chair across multiple systems to cleanse and transform qualititative data and draw meaningful, deep thematic insights.",
       solution: "AI delivered easy-to-use to use tool empowering users to easily cleanse and transform data providing deep, thematic insights to support better decision making.",
       results: [
-        "TBC ~$30k average savings per customer",
-        "TBC 50% reduction in time to compare quotes",
-        "TBC From build to go-to-market in < 3 months"
+        "50% reduction in time taken to cleanse and transform data",
+        "Tailored thematic insights not previously available",
+        "From build to go-to-market in < 3 months"
       ],
-      technologies: ["Azure", "GPT"],
+      technologies: ["Azure", "GPT", "Python"],
       icon: TrendingUp
     },
     {
