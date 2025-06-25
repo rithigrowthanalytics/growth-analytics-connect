@@ -9,7 +9,7 @@ const About = () => {
     {
       name: "Sid Galada",
       position: "Founder & CEO",
-      bio: "Sid brings over 20 years of experience working across analytics, growth and M&A functions. He works as a CRO and supports customers with their build and buy decisions. Sid is interested in the power of AI has taken three AI applications to market to date.",
+      bio: "Sid brings over 20 years of experience working across analytics, growth and M&A functions. He works as a CRO and supports customers with their build and buy decisions. Sid is interested in the power of AI and has already taken three AI applications to market.",
       expertise: ["Data Strategy", "Business Intelligence", "Artificial Intelligence"],
       image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face",
       linkedin: "https://www.linkedin.com/in/sidgalada/",
