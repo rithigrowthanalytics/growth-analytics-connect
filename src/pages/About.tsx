@@ -11,7 +11,7 @@ const About = () => {
       position: "Founder & CEO",
       bio: "Sid brings over 20 years of experience working across analytics, growth and M&A functions. He works as a CRO and supports customers with their build and buy decisions. Sid is interested in the power of AI and has already taken three AI applications to market.",
       expertise: ["Data Strategy", "Business Intelligence", "Artificial Intelligence"],
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face",
+      image: "/lovable-uploads/bc1b374f-5e8c-4256-9711-a138f50dcad2.png",
       linkedin: "https://www.linkedin.com/in/sidgalada/",
       email: "sid@growthanalytics.com.au"
     },
@@ -20,7 +20,7 @@ const About = () => {
       position: "Managing Director",
       bio: "Rithi is a technology and product leader with 15+ years leading digital product, AI, and transformation in fintech, government, and healthcare. Rithi helps organisations turn data and strategy into high-impact, real-world outcomes solving customer problems.",
       expertise: ["Artificial Intelligence", "Digital Transformation", "Product Management"],
-      image: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=400&h=400&fit=crop&crop=face",
+      image: "/lovable-uploads/2f9a5a28-3fa3-41e3-8282-1ff7ff9543cc.png",
       linkedin: "https://www.linkedin.com/in/rithi-mathew-4506b93/",
       email: "rithi@growthanalytics.com.au"
     }
