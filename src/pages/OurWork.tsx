@@ -35,7 +35,7 @@ const OurWork = () => {
       icon: TrendingUp
     },
      {
-      title: "No Code Data Clean & AI Thematic Insights",
+      title: "No Code Data Cleaning & AI Thematic Insights",
       client: "Researchers Analysing Survey Data",
       industry: "Government",
       challenge: "Users swivel chair across multiple systems to cleanse and transform qualitative data and and struggle to analyse open-ended responses.",
