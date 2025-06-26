@@ -1,4 +1,5 @@
-import { ArrowRight, BarChart3, Brain, Building2, CheckCircle, Globe, Mail, MapPin, Phone, TrendingUp, Users } from "lucide-react";
+
+import { ArrowRight, BarChart3, Brain, Building2, CheckCircle, Globe, Mail, MapPin, Phone, TrendingUp, Users, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -9,6 +10,7 @@ import { Link } from "react-router-dom";
 
 const Index = () => {
   const { toast } = useToast();
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -81,13 +83,67 @@ const Index = () => {
               <TrendingUp className="h-8 w-8 text-blue-600" />
               <span className="text-xl font-bold text-gray-900">Growth Analytics</span>
             </div>
+            
+            {/* Desktop Navigation */}
             <div className="hidden md:flex items-center space-x-8">
               <a href="#services" className="text-gray-700 hover:text-blue-600 transition-colors">Services</a>
               <Link to="/our-work" className="text-gray-700 hover:text-blue-600 transition-colors">Our Work</Link>
               <Link to="/about" className="text-gray-700 hover:text-blue-600 transition-colors">About</Link>
-              <Button className="bg-blue-600 hover:bg-blue-700"onClick={scrollToContact}>Contact</Button>
+              <Button className="bg-blue-600 hover:bg-blue-700" onClick={scrollToContact}>Contact</Button>
+            </div>
+
+            {/* Mobile menu button */}
+            <div className="md:hidden">
+              <Button
+                variant="ghost"
+                size="icon"
+                onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+                className="text-gray-700"
+              >
+                {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+              </Button>
             </div>
           </div>
+
+          {/* Mobile Navigation Menu */}
+          {mobileMenuOpen && (
+            <div className="md:hidden border-t border-gray-200 py-4">
+              <div className="flex flex-col space-y-4">
+                <a 
+                  href="#services" 
+                  className="text-gray-700 hover:text-blue-600 transition-colors px-4 py-2"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  Services
+                </a>
+                <Link 
+                  to="/our-work" 
+                  className="text-gray-700 hover:text-blue-600 transition-colors px-4 py-2"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  Our Work
+                </Link>
+                <Link 
+                  to="/about" 
+                  className="text-gray-700 hover:text-blue-600 transition-colors px-4 py-2"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  About
+                </Link>
+                <div className="px-4">
+                  <Button 
+                    className="bg-blue-600 hover:bg-blue-700 w-full" 
+                    onClick={() => {
+                      scrollToContact();
+                      setMobileMenuOpen(false);
+                    }}
+                  >
+                    Contact
+                  </Button>
+                </div>
+              </div>
+            </div>
+          )}
         </div>
       </nav>
 
