@@ -97,11 +97,11 @@ const Index = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="animate-fade-in">
               <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
-                Accelerate Your Growth with 
-                <span className="text-blue-600"> Data-Driven Insights</span>
+                Transform Your Business with 
+                <span className="text-blue-600"> AI-Powered Solutions</span>
               </h1>
               <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-                Growth Analytics is a boutique consulting firm specialising in data analytics, artificial intelligence, and mergers & acquisitions. We transform complex data into strategic advantage.
+                Growth Analytics is a boutique consulting firm specialising in artificial intelligence, data analytics, and strategic advisory services. We harness cutting-edge AI to unlock your business potential.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8" onClick={scrollToContact}>
@@ -115,21 +115,10 @@ const Index = () => {
             </div>
             <div className="relative animate-fade-in">
               <img 
-                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop&crop=center" 
-                alt="Data Analytics Dashboard"
+                src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=600&fit=crop&crop=center" 
+                alt="AI Technology and Neural Networks"
                 className="rounded-lg shadow-2xl"
               />
-              <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-lg shadow-lg border">
-                <div className="flex items-center space-x-4">
-                  <div className="bg-green-100 p-2 rounded-full">
-                    <TrendingUp className="h-6 w-6 text-green-600" />
-                  </div>
-                  <div>
-                    <p className="text-sm text-gray-600">Average Growth</p>
-                    <p className="text-2xl font-bold text-gray-900">247%</p>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>
