@@ -79,13 +79,13 @@ const About = () => {
                 Our Story
               </h2>
               <p className="text-lg text-gray-600 mb-6">
-                Growth Analytics was founded with a simple mission: to help Australian businesses harness the power of data to drive sustainable growth. We recognized that many organizations were sitting on goldmines of data but lacked the expertise to extract meaningful insights.
+                Growth Analytics was founded with a simple mission: to help Australian businesses harness the power of data to drive sustainable growth. We recognized that many organisations were sitting on goldmines of data but lacked the expertise to extract meaningful insights.
               </p>
               <p className="text-lg text-gray-600 mb-6">
                 Our founders combined their decades of experience in data analytics, artificial intelligence, and business strategy to create a consultancy that bridges the gap between technical capability and business impact.
               </p>
               <p className="text-lg text-gray-600">
-                Today, we're proud to serve clients across Australia and the Asia-Pacific region, helping them transform their operations and achieve measurable results through intelligent use of data and technology.
+                Today, we're proud to serve clients across Australia and the world, helping them transform their operations and achieve measurable results through intelligent use of data and technology.
               </p>
             </div>
             <div>
