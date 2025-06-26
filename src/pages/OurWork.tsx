@@ -31,21 +31,21 @@ const OurWork = () => {
         "50% reduction in time to compare quotes",
         "From build to go-to-market in < 3 months"
       ],
-      technologies: ["LLM", "TBC"],
+      technologies: ["NLP"],
       icon: TrendingUp
     },
      {
-      title: "No Code AI Thematic Insights",
+      title: "No Code Data Clean & AI Thematic Insights",
       client: "Researchers Analysing Survey Data",
       industry: "Government",
-      challenge: "Users swivel chair across multiple systems to cleanse and transform qualititative data and draw meaningful, deep thematic insights.",
-      solution: "AI delivered easy-to-use to use tool empowering users to easily cleanse and transform data providing deep, thematic insights to support better decision making.",
+      challenge: "Users swivel chair across multiple systems to cleanse and transform qualitative data and and struggle to analyse open-ended responses.",
+      solution: "Easy-to-use AI-powered tool allowing users to cleanse data and generate themes for open-ended responses in minutes.",
       results: [
         "50% reduction in time taken to cleanse and transform data",
-        "Tailored thematic insights not previously available",
+        "Tailored thematic insights not previously available to inform deeper research and decision making",
         "From build to go-to-market in < 3 months"
       ],
-      technologies: ["Azure", "GPT", "Python"],
+      technologies: ["Azure", "NLP", "Rust"],
       icon: TrendingUp
     },
     {
