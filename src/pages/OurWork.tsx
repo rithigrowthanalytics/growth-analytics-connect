@@ -215,7 +215,7 @@ const OurWork = () => {
                 <span className="text-xl font-bold">Growth Analytics</span>
               </div>
               <p className="text-gray-400 mb-4">
-                Boutique consulting firm specialising in data analytics, artificial intelligence, and mergers & acquisitions services.
+                Growth Analytics is a boutique consulting firm specialising in artificial intelligence, data analytics, and strategic advisory services.
               </p>
               <p className="text-sm text-gray-400">
                 © 2025 Growth Analytics Pty Ltd. All rights reserved.<br />
