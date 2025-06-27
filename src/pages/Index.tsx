@@ -527,17 +527,17 @@ const Index = () => {
             <div>
               <h4 className="text-lg font-semibold mb-4">Services</h4>
               <ul className="space-y-2 text-gray-400">
-                <li><a href="#" className="hover:text-white transition-colors">Data Analytics</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Artificial Intelligence</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">M&A Advisory</a></li>
+                <li><a href="#services" className="hover:text-white transition-colors">Data Analytics</a></li>
+                <li><a href="#services" className="hover:text-white transition-colors">Artificial Intelligence</a></li>
+                <li><a href="#services" className="hover:text-white transition-colors">M&A Advisory</a></li>
               </ul>
             </div>
             <div>
               <h4 className="text-lg font-semibold mb-4">Company</h4>
               <ul className="space-y-2 text-gray-400">
-                <li><a href="#" className="hover:text-white transition-colors">About Us</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Case Studies</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Contact</a></li>
+                <li><Link to="/about" className="hover:text-white transition-colors">About Us</Link></li>
+                <li><Link to="/our-work" className="hover:text-white transition-colors">Case Studies</Link></li>
+                <li><a href="#contact" className="hover:text-white transition-colors">Contact</a></li>
               </ul>
             </div>
           </div>
