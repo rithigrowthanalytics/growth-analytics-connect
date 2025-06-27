@@ -197,10 +197,10 @@ const OurWork = () => {
             Join the growing list of Australian businesses that have transformed their operations with Growth Analytics.
           </p>
           <Button size="lg" variant="outline" className="border-white text-blue-600:bg-white hover:text-blue-600" asChild>
-            <a href="/#contact">
+            <Link to="/#contact">
               Start Your Project
               <ArrowRight className="ml-2 h-5 w-5" />
-            </a>
+            </Link>
           </Button>
         </div>
       </section>
