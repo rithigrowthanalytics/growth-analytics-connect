@@ -6,12 +6,13 @@ const ScrollToTop = () => {
   const { pathname } = useLocation();
 
   useEffect(() => {
-    console.log('ScrollToTop triggered for path:', pathname);
-    window.scrollTo({
-      top: 0,
-      left: 0,
-      behavior: 'instant'
-    });
+    // Force scroll to top immediately
+    window.scrollTo(0, 0);
+    
+    // Also ensure it happens after any layout changes
+    setTimeout(() => {
+      window.scrollTo(0, 0);
+    }, 0);
   }, [pathname]);
 
   return null;
