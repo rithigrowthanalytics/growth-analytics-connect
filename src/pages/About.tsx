@@ -1,4 +1,3 @@
-
 import { ArrowLeft, TrendingUp, LinkedinIcon, Mail, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -25,6 +24,11 @@ const About = () => {
       email: "rithi@growthanalytics.com.au"
     }
   ];
+
+  const handleGetInTouch = () => {
+    // Navigate to homepage and scroll to contact section
+    window.location.href = "/#contact";
+  };
 
   return (
     <div className="min-h-screen bg-white">
@@ -211,10 +215,8 @@ const About = () => {
           <p className="text-xl text-blue-100 max-w-3xl mx-auto mb-8">
             Let's discuss how Growth Analytics can help transform your business through data-driven insights.
           </p>
-          <Button size="lg" variant="outline" className="border-white text-text-blue-600 hover:bg-white hover:text-blue-600" asChild>
-            <Link to="/#contact">
-              Get In Touch
-            </Link>
+          <Button size="lg" variant="outline" className="border-white text-text-blue-600 hover:bg-white hover:text-blue-600" onClick={handleGetInTouch}>
+            Get In Touch
           </Button>
         </div>
       </section>

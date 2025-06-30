@@ -1,4 +1,3 @@
-
 import { ArrowLeft, ArrowRight, Building2, TrendingUp, Users, Star, Quote } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -64,7 +63,10 @@ const OurWork = () => {
     }
   ];
 
-  
+  const handleStartProject = () => {
+    // Navigate to homepage and scroll to contact section
+    window.location.href = "/#contact";
+  };
 
   return (
     <div className="min-h-screen bg-white">
@@ -185,8 +187,6 @@ const OurWork = () => {
         </div>
       </section>
 
-    
-
       {/* CTA Section */}
       <section className="py-20 bg-blue-600">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -196,11 +196,9 @@ const OurWork = () => {
           <p className="text-xl text-blue-100 max-w-3xl mx-auto mb-8">
             Join the growing list of Australian businesses that have transformed their operations with Growth Analytics.
           </p>
-          <Button size="lg" variant="outline" className="border-white text-blue-600:bg-white hover:text-blue-600" asChild>
-            <Link to="/#contact">
-              Start Your Project
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Link>
+          <Button size="lg" variant="outline" className="border-white text-blue-600:bg-white hover:text-blue-600" onClick={handleStartProject}>
+            Start Your Project
+            <ArrowRight className="ml-2 h-5 w-5" />
           </Button>
         </div>
       </section>
